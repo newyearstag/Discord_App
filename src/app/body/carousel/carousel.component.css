@@ -1,0 +1,9 @@
+.carouselbtn{
+    background-color:lightgray;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+  }
+  .carouselbtn:hover{
+    background-color: darkslategray;
+  }
