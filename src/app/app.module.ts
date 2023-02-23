@@ -7,6 +7,7 @@ import { TopNavBarComponentComponent } from './navigation/top-nav-bar-component/
 import { FooterComponentComponent } from './navigation/footer-component/footer-component.component';
 import { CarouselComponent } from './body/carousel/carousel.component';
 import { CardsComponent } from './navigation/cards/cards.component';
+import { Lab3ShoppingCardsComponent } from './navigation/lab3-shopping-cards/lab3-shopping-cards.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { CardsComponent } from './navigation/cards/cards.component';
     TopNavBarComponentComponent,
     FooterComponentComponent,
     CarouselComponent,
-    CardsComponent
+    CardsComponent,
+    Lab3ShoppingCardsComponent
    
     
     
