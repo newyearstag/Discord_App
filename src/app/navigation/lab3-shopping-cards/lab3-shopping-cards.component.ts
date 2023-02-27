@@ -13,8 +13,10 @@ export class Lab3ShoppingCardsComponent implements OnInit {
 @Input() currprice: number;
 @Input() oldprice: number;
 @Input() discount: number;
+//@Input() isVisible: boolean;
 
-  constructor() {
+  private constructor() {
+    //this.isVisible = false;
     this.img = "No image found";
     this.imgDescription = "No description found";
     this.brand = "No brand found";
@@ -22,6 +24,7 @@ export class Lab3ShoppingCardsComponent implements OnInit {
     this.currprice = 0;
     this.oldprice = 0;
     this.discount = 0;
+
   }
 
   ngOnInit(): void {

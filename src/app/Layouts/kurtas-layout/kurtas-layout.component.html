@@ -1,0 +1,19 @@
+<div class = "container-fluid d-flex">
+    <div *ngFor="let item of products">
+        <app-lab3-shopping-cards imgDescription="Item 1" description={{item.description}} img={{item.img}} [brand]='item.brand' 
+        [currprice]='item.currprice' [oldprice]='item.oldprice' [discount]='item.discount'></app-lab3-shopping-cards>
+    </div>
+
+<app-lab3-shopping-cards imgDescription="Item 1" description="Mens Athletic Pants" img=".\assets\kurta1.webp" brand="Gucci" 
+[currprice]=100 [oldprice]=500 [discount]=80></app-lab3-shopping-cards>
+<app-lab3-shopping-cards imgDescription="Item 2" description="Mens Sweatpants" img=".\assets\kurta2.jpg" brand="Louise Baton" 
+[currprice]=1080 [oldprice]=1200 [discount]=10></app-lab3-shopping-cards>
+<app-lab3-shopping-cards imgDescription="Item 3" description="Mens Gym Shorts" img=".\assets\kurta3.webp" brand="Yaaaa Baby Co." 
+[currprice]=475 [oldprice]=1900 [discount]=75></app-lab3-shopping-cards>
+<app-lab3-shopping-cards imgDescription="Item 3" description="Mens Gym Shorts" img=".\assets\kurta4.webp" brand="Monsters Inc." 
+[currprice]=475 [oldprice]=1900 [discount]=75></app-lab3-shopping-cards>
+<app-lab3-shopping-cards imgDescription="Item 3" description="Mens Gym Shorts" img=".\assets\kurta5.webp" brand="Bass Pro Shop" 
+[currprice]=475 [oldprice]=1900 [discount]=75></app-lab3-shopping-cards>
+
+</div>
+<app-lab3-shopping-cards>loading..</app-lab3-shopping-cards>

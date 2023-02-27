@@ -1,0 +1,19 @@
+<div class = "container-fluid d-flex">
+    <div *ngFor="let item of products">
+        <app-lab3-shopping-cards imgDescription="Item 1" description={{item.description}} img={{item.img}} [brand]='item.brand' 
+        [currprice]='item.currprice' [oldprice]='item.oldprice' [discount]='item.discount'></app-lab3-shopping-cards>
+    </div>
+
+<app-lab3-shopping-cards imgDescription="Item 1" description="Fancy Dress" img=".\assets\dresses1.webp" brand="Ur Moms House" 
+[currprice]=100 [oldprice]=500 [discount]=80></app-lab3-shopping-cards>
+<app-lab3-shopping-cards imgDescription="Item 2" description="Less Fancy Dress" img=".\assets\dresses2.webp" brand="Versace" 
+[currprice]=1080 [oldprice]=1200 [discount]=10></app-lab3-shopping-cards>
+<app-lab3-shopping-cards imgDescription="Item 3" description="Pretty Dress?" img=".\assets\dresses3.webp" brand="Rural King" 
+[currprice]=475 [oldprice]=1900 [discount]=75></app-lab3-shopping-cards>
+<app-lab3-shopping-cards imgDescription="Item 3" description="Dress?" img=".\assets\dresses4.jpg" brand="SkyNet" 
+[currprice]=475 [oldprice]=1900 [discount]=75></app-lab3-shopping-cards>
+<app-lab3-shopping-cards imgDescription="Item 3" description="Dressy Dress" img=".\assets\dresses5.webp" brand="John Deere" 
+[currprice]=475 [oldprice]=1900 [discount]=75></app-lab3-shopping-cards>
+
+</div>
+<app-lab3-shopping-cards>loading..</app-lab3-shopping-cards>

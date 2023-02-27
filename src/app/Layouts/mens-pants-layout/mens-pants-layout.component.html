@@ -1,0 +1,14 @@
+<div class = "container-fluid d-flex">
+    <div *ngFor="let item of products">
+        <app-lab3-shopping-cards imgDescription="Item 1" description={{item.description}} img={{item.img}} [brand]='item.brand' 
+        [currprice]='item.currprice' [oldprice]='item.oldprice' [discount]='item.discount'></app-lab3-shopping-cards>
+    </div>
+
+<app-lab3-shopping-cards imgDescription="Item 1" description="Mens Athletic Pants" img=".\assets\pants4.webp" brand="Gucci" 
+[currprice]=100 [oldprice]=500 [discount]=80></app-lab3-shopping-cards>
+<app-lab3-shopping-cards imgDescription="Item 2" description="Mens Sweatpants" img=".\assets\pants5.webp" brand="Louise Baton" 
+[currprice]=1080 [oldprice]=1200 [discount]=10></app-lab3-shopping-cards>
+<app-lab3-shopping-cards imgDescription="Item 3" description="Mens Gym Shorts" img=".\assets\pants6.webp" brand="Yaaaa Baby Co." 
+[currprice]=475 [oldprice]=1900 [discount]=75></app-lab3-shopping-cards>
+</div>
+<app-lab3-shopping-cards>loading..</app-lab3-shopping-cards>
