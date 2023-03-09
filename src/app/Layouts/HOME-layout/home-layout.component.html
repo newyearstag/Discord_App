@@ -2,4 +2,18 @@
     <app-carousel>loading..</app-carousel> 
     <body><h1><span style="font-size: 30px; text-indent: 30px;">DEAL OF THE DAY</span></h1></body>
     <app-cards>loading..</app-cards>
+    <img src=".\assets\shopbycat.webp" style="width:1519.2px">
+    <div class = "container-fluid d-flex">
+        <div *ngFor="let item of products">
+            <app-shop-by-category imgDescription="Item 1"  img={{item.img}}></app-shop-by-category>
+        </div>
+    
+    <app-shop-by-category imgDescription="Item 1"  img=".\assets\category4.webp" ></app-shop-by-category>
+    <app-shop-by-category imgDescription="Item 2"  img=".\assets\category5.webp" ></app-shop-by-category>
+    <app-shop-by-category imgDescription="Item 3"  img=".\assets\category6.webp" ></app-shop-by-category>
+    
+    </div>
+    <app-shop-by-category>loading..</app-shop-by-category>
+
+    
 </div>

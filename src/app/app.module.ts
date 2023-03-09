@@ -18,6 +18,7 @@ import { FlatsAndHeelsComponent } from './Layouts/flats-and-heels/flats-and-heel
 import { DinnerwareKitchenwareLayoutComponent } from './Layouts/dinnerware-kitchenware-layout/dinnerware-kitchenware-layout.component';
 import { AccessoriesLayoutComponent } from './Layouts/accessories-layout/accessories-layout.component';
 import { NaturalCareLayoutComponent } from './Layouts/natural-care-layout/natural-care-layout.component';
+import { ShopByCategoryComponent } from './body/shop-by-category/shop-by-category.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { NaturalCareLayoutComponent } from './Layouts/natural-care-layout/natura
     FlatsAndHeelsComponent,
     DinnerwareKitchenwareLayoutComponent,
     AccessoriesLayoutComponent,
-    NaturalCareLayoutComponent
+    NaturalCareLayoutComponent,
+    ShopByCategoryComponent
    
     
     
