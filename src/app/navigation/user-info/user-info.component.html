@@ -1,0 +1,20 @@
+<p *ngIf="myInfo == undefined">Failed Fetching User Info</p>
+<div *ngIf="myInfo != undefined">
+    <div class="container-fluid">
+        <div class="flex-row">
+            <div class="flexcolumn">
+                User: {{myInfo.firstname}} {{myInfo.lastname}}
+            </div>
+            <div class="flexcolumn">
+                Mix ID:  <a href="mailto: {{myInfo.wvu_id}}@mix.wvu.edu"> {{myInfo.wvu_id}}</a>
+            </div>
+            <div class="flexcolumn">
+                Github: <a href="https://github.com/newyearstag/Discord_App"> {{myInfo.Github}}</a>
+            </div> 
+            <div class="flexcolumn">
+                
+            </div>
+        </div>
+    </div>
+
+</div>

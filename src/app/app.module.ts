@@ -19,6 +19,8 @@ import { DinnerwareKitchenwareLayoutComponent } from './Layouts/dinnerware-kitch
 import { AccessoriesLayoutComponent } from './Layouts/accessories-layout/accessories-layout.component';
 import { NaturalCareLayoutComponent } from './Layouts/natural-care-layout/natural-care-layout.component';
 import { ShopByCategoryComponent } from './body/shop-by-category/shop-by-category.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './navigation/user-info/user-info.component'
 
 
 @NgModule({
@@ -39,14 +41,16 @@ import { ShopByCategoryComponent } from './body/shop-by-category/shop-by-categor
     DinnerwareKitchenwareLayoutComponent,
     AccessoriesLayoutComponent,
     NaturalCareLayoutComponent,
-    ShopByCategoryComponent
+    ShopByCategoryComponent,
+    UserInfoComponent
    
     
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
