@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/discord-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
