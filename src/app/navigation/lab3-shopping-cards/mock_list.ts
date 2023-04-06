@@ -1,5 +1,5 @@
 export const mock_list = [
-/*    {
+    {
         img: "./assets/pants1.webp",
         imgDescription: "Item 1",
         brand: "LuLuLemon",
@@ -27,5 +27,5 @@ export const mock_list = [
         discount: 66,
         currprice: 1020,
     }
-    */
+    
 ];
