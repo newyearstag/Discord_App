@@ -1,4 +1,14 @@
 export const environment = {
+  firebase: {
+    projectId: 'discord-app-16fb6',
+    appId: '1:608188617891:web:9258d4717cdaea74d31b16',
+    databaseURL: 'https://discord-app-16fb6-default-rtdb.firebaseio.com',
+    storageBucket: 'discord-app-16fb6.appspot.com',
+    apiKey: 'AIzaSyBFWMjYPV3Icg1xYHw8vYY3N-wh50nu1qg',
+    authDomain: 'discord-app-16fb6.firebaseapp.com',
+    messagingSenderId: '608188617891',
+    measurementId: 'G-0DWF4ZDM17',
+  },
     production: false
 };
 

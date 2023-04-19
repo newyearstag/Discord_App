@@ -10,11 +10,16 @@ import { DinnerwareKitchenwareLayoutComponent } from './Layouts/dinnerware-kitch
 import { AccessoriesLayoutComponent } from './Layouts/accessories-layout/accessories-layout.component';
 import { NaturalCareLayoutComponent } from './Layouts/natural-care-layout/natural-care-layout.component';
 import { MensPantsLayoutComponent } from './Layouts/mens-pants-layout/mens-pants-layout.component';
+import { AddProductComponent } from './Layouts/add-product/add-product.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeLayoutComponent
+   },
+   {
+    path: 'admin',
+    component: AddProductComponent
    },
    {
     path: 'KurtasLayout',

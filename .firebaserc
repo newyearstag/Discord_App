@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "discord-app-16fb6"
+  },
+  "targets": {
+    "discord-app-16fb6": {
+      "hosting": {
+        "Discord_App": [
+          "discord-app-16fb6"
+        ]
+      }
+    }
   }
 }

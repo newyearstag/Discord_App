@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm="ngForm" (ngSubmit)="addProduct(postForm.value)">
+                    <!-- <app-lab3-shopping-cards 
+                imgDescription="Item 1" 
+                description="Mens Athletic Pants" 
+                img=".\assets\pants4.webp" 
+                brand="Gucci" 
+                [currprice]=100 
+                [oldprice]=500 
+                [discount]=80>
+                    </app-lab3-shopping-cards> -->
+                <div class="input-group">
+                    <span class="input-group-text">Image Path</span>
+                    <input type="text" class="form-control" ngModel name="img">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Image Description</span>
+                    <input type="text" class="form-control" ngModel name="imgDescription">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Item Description</span>
+                    <input type="text" class="form-control" ngModel name="description">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Brand</span>
+                    <input type="text" class="form-control" ngModel name="brand">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Current Price</span>
+                    <input type="text" class="form-control" ngModel name="currprice">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Old Price</span>
+                    <input type="text" class="form-control" ngModel name="oldprice">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text">Discount</span>
+                    <input type="text" class="form-control" ngModel name="discount">
+                </div>
+                <button class="btn btn-dark" type="submit">
+                    Add Product
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
