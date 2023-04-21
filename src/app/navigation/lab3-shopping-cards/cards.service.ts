@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+/*import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { ProductModel } from "./product.model";
 import { AngularFireDatabase } from '@angular/fire/compat/database';
@@ -8,7 +8,7 @@ import { AngularFireDatabase } from '@angular/fire/compat/database';
     {providedIn: 'root'}
 )
 export class ProductsService {
-   // private baseUrl:string = "https://tutorial-db3ee-default-rtdb.firebaseio.com/";
+    private baseUrl:string = "https://tutorial-db3ee-default-rtdb.firebaseio.com/";
    // private productsEndPoint = "Products.json";
 
     constructor(private db: AngularFireDatabase) {
@@ -22,10 +22,11 @@ export class ProductsService {
     }
 
     getProduct(index:number){
-
+        return this.db.list<ProductModel>(this.baseUrl + 'Products' + '/' + index + '.json');
     }
 
     addProduct(Product: ProductModel){
         this.db.list<ProductModel>("Products").push(Product)
     }
 }
+*/

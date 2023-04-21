@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsService } from 'src/app/navigation/lab3-shopping-cards/cards.service';
-import { ProductModel } from 'src/app/navigation/lab3-shopping-cards/product.model';
+import { ProductsService } from 'src/app/body/shop-by-category/cat.service';
+import { ProductModel2 } from 'src/app/body/shop-by-category/product.model2';
 
 @Component({
-  selector: 'fm-add-product',
+  selector: 'app-add-product',
   templateUrl: './add-product.component.html',
   styleUrls: ['./add-product.component.css']
 })
-export class AddProductComponent {
+export class AddProductComponent implements OnInit {
 
   constructor(private ps:ProductsService) { }
 
-  ngOnInit(): void{
-  }
+  ngOnInit(): void{ }
 
-  addProduct(Product: ProductModel){
+  addProduct(Product: ProductModel2){
     console.log("You clicked add product.");
     console.log(Product);
     this.ps.addProduct(Product);

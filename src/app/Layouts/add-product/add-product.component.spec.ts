@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { AddProductComponent } from 'src/app/Layouts/add-product/add-product.component';
-//import { Lab3ShoppingCardsComponent } from './lab3-shopping-cards.component';
 
-describe('AddProductComponent', () => {
+import { AddProductComponent } from './add-product.component';
+
+describe('AddCompComponent', () => {
   let component: AddProductComponent;
   let fixture: ComponentFixture<AddProductComponent>;
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductModel } from 'src/app/navigation/lab3-shopping-cards/product.model';
+import { ProductModel2 } from 'src/app/body/shop-by-category/product.model2';
 // import { mock_list } from './card/mock_list';
-import { ProductsService } from 'src/app/navigation/lab3-shopping-cards/cards.service';
+import { ProductsService } from 'src/app/body/shop-by-category/cat.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { ProductsService } from 'src/app/navigation/lab3-shopping-cards/cards.se
 })
 export class AppComponent implements OnInit {
   title = 'TutorialApp';
-  products: ProductModel [] = [];
+  products: ProductModel2 [] = [];
 
   constructor(private productservice:ProductsService){
     // for (var item of mock_list){
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     // }
   }
   ngOnInit(): void {
-    this.productservice.getProducts().subscribe((data: ProductModel []) =>{
+    this.productservice.getProducts().subscribe((data: ProductModel2 []) =>{
     for (var x of data){
       console.log(x)
       this.products.push(x)
