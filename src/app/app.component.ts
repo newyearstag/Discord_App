@@ -8,7 +8,7 @@ import { ProductsService } from 'src/app/body/shop-by-category/cat.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'TutorialApp';
   products: ProductModel2 [] = [];
 
@@ -18,12 +18,5 @@ export class AppComponent implements OnInit {
     //   this.products.push(item);
     // }
   }
-  ngOnInit(): void {
-    this.productservice.getProducts().subscribe((data: ProductModel2 []) =>{
-    for (var x of data){
-      console.log(x)
-      this.products.push(x)
-    }
-  })
-  }
+
 }
