@@ -11,6 +11,7 @@ import { AccessoriesLayoutComponent } from './Layouts/accessories-layout/accesso
 import { NaturalCareLayoutComponent } from './Layouts/natural-care-layout/natural-care-layout.component';
 import { MensPantsLayoutComponent } from './Layouts/mens-pants-layout/mens-pants-layout.component';
 import { AddProductComponent } from './Layouts/add-product/add-product.component';
+import { AuthComponent } from './auth/auth.component';
 
 const routes: Routes = [
   {
@@ -56,7 +57,8 @@ const routes: Routes = [
   {
     path: 'MensPantsLayout',
    component: MensPantsLayoutComponent
-  }
+  },
+  { path: 'auth', component: AuthComponent},
 
 ];
 

@@ -29,6 +29,7 @@ import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
+import { AuthComponent } from './auth/auth.component';
 
 
 
@@ -53,8 +54,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
     NaturalCareLayoutComponent,
     ShopByCategoryComponent,
     UserInfoComponent,
-    AddProductComponent
-   
+    AddProductComponent,
+    AuthComponent,
     
     
   ],
